@@ -29,112 +29,109 @@ Publish the website in the given URL.
 ```
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Cover</title>
-    <style>
+    <head>
+         <meta name="viewport" 
+         content="width=device-width, initial-scale=1.0">
+         <style>
+
+        .bookpage{
+            width: 400px;
+            height: 600px;
+            color:rgba(255, 255, 255, 0.562);
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image: url(cover\ harry.jpg);
+            background-size: cover;
+        }
+        .insight{
+            color: rgba(255, 255, 255, 0.359);
+
+        }
+        .hrstyle{
+            width:100px;
+        }
+        .author{
         
-*{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    margin: 0; 
-    background-color:whitesmoke;
-}
-
-.container
-{
-    display: flex;
-    height: 98vh;
-    width: 30%;    
-    justify-content: center;
-    align-items: center;
-    border-color: black;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    overflow: hidden;
-    background-image: url(nature.jpg);
-    background-repeat: no-repeat;
-}
-
-.head{
-    position: absolute;
-    color:purple;
-    top: 150px;
-    font-size: 18px;
-}
-
-.word1{
-    position: absolute;
-    color: violet;
-    top: 15px;
-    left: 560px;
-}
-
-.word2{
-    position: absolute;
-    top: 60px;
-    left: 540px;
-}
-
-.word{
-    position:absolute;
-    top: 550px;
-    left: 560px;
-    color:white;
-}
-
-.word3{
-    position: absolute;
-    top: 610px;
-    left: 540px;
-}
-
-.author{
-    position: absolute;
-    top: 630px;
-    left: 560px;
-    color:brown;
-}
-
-.pic img{
-    height: 100px;
-    width: 90px;
-    position: absolute;
-    top: 560px;
-    left: 870px;
-}
-        
-
-    </style>
-   
-</head>
-<body>
-    <div class="container">
-        <div class="head">
-            <h1>IKIGAI</h1>
-            <p>The Japanese Secret To a Long and Happy Life</p>
+            display: inline;
+            position: relative;
+            color: rgb(255, 255, 255);
+            top:190px;
+            
+            font-family:Georgia;
+            font-size: medium;
+        }
+        .booktitle{
+            font-family: 'times new roman', times new roman, times new roman;
+            font-size: larger;
+            text-align: center;
+            position: relative;
+            top: 30px;
+        }
+        .id {
+            width:400px;
+            position: relative;
+            top:180px;   
+        }
+        .pub{
+            font-size: medium;
+            position: relative;
+            top:155px;
+            left:330px;
+        }
+        .ed{
+            color: rgb(255, 255, 255);
+            font-size: medium;
+            font-family: Verdana;
+            position:relative;
+            top:85px;
+        }
+        .subtitle{
+            font-family:Tahoma;
+            font-size: large;
+            color: white;
+            position: relative;
+            top:40px;
+        }
+        .mypic{
+            position: relative;
+            top: 135px;
+            left: 260px;
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+        }
+        </style>
+        <title>Book Cover Page</title>
+    </head>
+    <body>
+        <div class="bookpage">
+            <div class="insight">
+                EXPECTO PATROM
+            </div>
+            <div class="hrstyle">
+                <hr style="color: rgba(255, 255, 255, 0.879);">
+            </div>
+            <div class="booktitle">
+                <h1>HARRY POTTER</h1></div>
+            <div class="subtitle">
+                Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry
+            </div>
+            <div class="mypic">
+                <img src="MY PHOTO.jpg" width="130" height="155" alt="">
+            </div>
+            <div class="id">
+                <hr style="color: rgba(255, 255, 255, 0.476);">
+            </div>
+            <div class="author">
+               <p><b>VIJAY KUMAR V R</b></p>
+            </div>
+            <div class="ed">
+                <b>FIRST EDITION  SEASON</b>
+            </div>
         </div>
-        <div class="word1">
-            <h3>EXPERT INSIGHT</h3>
-        </div>
-        <hr class="word2" width="210px">
-        <div class="word">
-            <h3>FIRST EDITION</h3>
-        </div>
-        <div class="author">
-            <h3>AFZARATHAGSIN JS</h3>
-        </div>
-        <hr class="word3" width="170px">
-        <div class="pic">
-            <img src="afz.jpg">
-        </div>
-    </div>
-</body>
+    </body>
 </html>
 
 ```
